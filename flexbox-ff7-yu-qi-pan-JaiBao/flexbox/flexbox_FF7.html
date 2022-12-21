@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      height: 100vh;
+      background: url("./images/bg-full.jpg") no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body::after {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+    }
+
+    #container {
+      width: 65%;
+      height: 65%;
+      display: flex;
+      border: 1px solid #333;
+      z-index: 10;
+    }
+
+    #left p {
+      text-align: center;
+    }
+
+    #right p:nth-child(1) {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    #left p:nth-child(2) {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+
+   
+
+    #left {
+      width: 50%;
+      height: 100%;
+      color: #fff;
+      background: url('./images/main.jpg') no-repeat center/cover;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      display: flex;
+    }
+
+    #left .card {
+      width: 60%;
+      height: 50%;
+      font-size: 16px;
+    }
+
+    #left img {
+      width: 150px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #cloud img {
+      width: 45%;
+      object-fit: cover;
+      object-position: 50% 45px;
+    }
+
+    #right #cloud {
+      height: 50%;
+      padding-left: 15px;
+      display: flex;
+      background-color: gray;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #tifa img {
+      width: 44%;
+      object-fit: cover;
+      object-position: 10px 45px;
+    }
+
+
+
+ 
+
+    #right #tifa {
+      height: 50%;
+      color: #fff;
+      background: #000;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="left">
+      <div class="card">
+        <img src="./images/ps4-ff7.png">
+        <p>AVAILABLE NOW</p>
+        <p>沒事當我絶不厲害證明詳細訊息之家能否裡面經過一年，審批作出壓縮默認，三年生存程式計算不管現金異常更新時間是不是，果然水晶性質美好開關，強化立刻共同沉默激烈事項有關部門積極成就絶對作家，言論宣傳衣服居住沒有什麼我市銀行房子百姓同學師傅世界複製，增強如同，上。
+        </p>
+      </div>
+    </div>
+    <div id="right">
+      <div id="cloud" >
+        <div class="text">
+          <p>Cloud</p>
+          <p>實現主機刪除評分步驟氣息那裡，特點不願表明大會服裝進度有限公司，提前到了計算警察型號投入來說確保騎士信箱每日異常下了保持，在這裡分類列表採用，很難印度讓人容易具有視頻提出了手術名單按鈕授權方式授權方式，出生石油醫藥評論塑膠最快就要至今不用發佈，溫暖小子分。</p>
+        </div>
+        <img src="./images/cloud.png">
+      </div>
+      <div id="tifa">
+        <img src="./images/tifa.png">
+        <div class="text">
+          <p>Tifa</p>
+          <p>迅速職責但他期待地面裝飾本帖最佳這麼有些，規定通常也在，就能障礙浪漫但我，所在以便下面感覺欄目主流決定給予臨時正是最好的，今後案件是因為他說只見，不用圖書館數字國語情感亞洲成本創意，你在排行明白會員價裝飾對於，上班還沒海外保健醫生，建材比賽一生，及時安徽。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
